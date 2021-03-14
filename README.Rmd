@@ -28,13 +28,48 @@ You can install the released version of drv from [CRAN](https://CRAN.R-project.o
 install.packages("drv")
 ```
 
-## Example
+or you can install it from Github:
 
-This is a basic example which shows you how to solve a common problem:
+``` r
+library(devtools)
+install_github("amice13/drv")
+```
 
-```{r example}
+
+## Examples
+
+Get all information about Ukrainian regions:
+
+```{r}
 library(drv)
 
-## Get the data frame with information about Ukrainian regions
-get_regions()
+head(get_regions())
+```
+Get all information about organizations of Ukrainian State Register of Voters
+
+```{r}
+head(get_drv_entites())
+```
+
+Get all election districts
+
+```{r}
+get_districts()
+```
+
+Get all polling stations in a specified district
+
+```{r}
+head(get_polling_stations(12))
+```
+
+Get all territories on a specified region:
+
+```{r}
+head(get_territories(12))
+```
+Get all addresses in a specified territories
+
+```{r}
+head(get_addresses(12))
 ```

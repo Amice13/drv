@@ -8,7 +8,7 @@ get_drv_entites()
 }
 \description{
 Returns a data frame with IDs of regions, IDs, names, numbers, addresses
-and contacts of entites of Ukrainian State Register of Voters
+and contacts of entities of Ukrainian State Register of Voters
 }
 \details{
 The data frame contains the following variables
@@ -16,9 +16,9 @@ The data frame contains the following variables
 \itemize{
 \item \strong{Region_Id} - a region identifier
 \item \strong{Organ_Id} - an entity identifier
-\item \strong{Organ_Num} - an enitiy number
+\item \strong{Organ_Num} - an entity number
 \item \strong{Organ_Name} - an entity name
 \item \strong{Organ_Adr} - an entity address
-\item \strong{Organ_Tel} - entity contacsd
+\item \strong{Organ_Tel} - entity contacts
 }
 }
